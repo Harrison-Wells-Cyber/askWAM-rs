@@ -17,8 +17,7 @@ if ($Configuration -eq 'Release') {
     $buildArguments += '--release'
 }
 
-# Cargo reads .cargo/config.toml relative to the current directory, not the
-# --manifest-path argument. Build here so the static CRT setting is applied.
+# Build from the directory containing Cargo.toml and Cargo.lock.
 Push-Location $PSScriptRoot
 try {
     & cargo @buildArguments
