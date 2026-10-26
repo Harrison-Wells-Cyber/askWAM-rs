@@ -29,3 +29,6 @@ List accounts, choose an account, or see all options:
 ```
 
 Use `--client-id "APP_ID"` and `--scope "SCOPE"` to request a token for another app or API. Add `--hide` to leave the token out of the output.
+
+## Credit
+This is a Rust port of the original askWAM tool by Dirk Jan Mollema, which is available at https://github.com/dirkjanm/askWAM
